@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intoku</title>
+    <style>
+        @font-face {
+            font-family: 'Exmouth';
+            src: url('fonts/Exmouth.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'F25_Bank_Printer';
+            src: url('fonts/F25_Bank_Printer.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            font-family: 'F25_Bank_Printer', sans-serif; /* Apply F25_Bank_Printer for all content except the header */
+        }
+
+        h1 {
+            font-family: 'Exmouth', sans-serif; /* Apply Exmouth font only for the header */
+            font-size: 100px;
+            font-weight: normal;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .subscribe-section {
+            text-align: center;
+        }
+
+        .subscribe-section p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .subscribe-section input[type="email"] {
+            padding: 10px;
+            font-size: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 250px;
+            margin-right: 10px;
+            text-align: center; /* Center the text inside the email input box */
+        }
+
+        /* Center the placeholder text */
+        .subscribe-section input[type="email"]::placeholder {
+            text-align: center;
+        }
+
+        .subscribe-section input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subscribe-section input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Intoku</h1>
+
+    <!-- Subscribe Section -->
+    <div class="subscribe-section">
+        <form action="https://script.google.com/macros/s/AKfycbyrhy7dTlF3Ckpc7PQ29ElZIThKJUorgFZHDSHBzOCkck-LjnGasdW6ZEqWj9J0oNu6/exec" method="post">
+            <input type="email" name="email" placeholder="e n t e r   y o u r   e m a i l   t o   b e   n o t i f i e d" required>
+            <input type="submit" value="e n t e r">
+        </form>
+    </div>
+</body>
+</html>
