@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Exmouth';
+    src: url('fonts/exmouth_.woff2') format('woff2'),
+         url('fonts/exmouth_.woff') format('woff'),
+         url('fonts/exmouth_.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'F25_Bank_Printer';
+    src: url('fonts/F25_Bank_Printer.woff2') format('woff2'),
+         url('fonts/F25_Bank_Printer.woff') format('woff'),
+         url('fonts/F25_Bank_Printer.ttf') format('truetype');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'F25_Bank_Printer', sans-serif;
+}
+
+.center-text {
+	font-family: 'Exmouth', sans-serif;
+    font-size: 10em;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Existing styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Exmouth', sans-serif;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.cart-icon svg {
+    fill: black;
+    width: 30px;
+    height: 30px;
+}
+
+.shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-family: 'Exmouth', sans-serif;
+    font-size: 24px;
+    margin: 15px 0;
+    color: black;
+}
+
+.product-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.add-to-cart-btn,
+.remove-item-btn,
+.decrease-qty-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover,
+.remove-item-btn:hover,
+.decrease-qty-btn:hover {
+    background-color: #555;
+}
+
+.cart-section {
+    padding: 20px;
+    background-color: white;
+    display: none;
+}
+
+.cart-items {
+    margin-top: 20px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.cart-item h4 {
+    margin: 0;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+.cart-panel {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease, opacity 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.cart-panel.open {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+}
+
+.close-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.item-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
